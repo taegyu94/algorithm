@@ -3,6 +3,7 @@ package algorithm;
 import java.util.Scanner;
 
 import algorithm.primenumber.PrimeNumber3;
+import algorithm.sort.BubbleSort;
 import algorithm.sort.InsertionSort;
 import algorithm.sort.SelectionSort;
 
@@ -43,11 +44,18 @@ public class Main {
 //		System.out.println(sels.getArray());
 		
 		//// InsertionSort
-		InsertionSort is = new InsertionSort();
-		is.setArrayRandom();
-		System.out.println(is.getArray());
-		is.insertionSort();
-		System.out.println(is.getArray());
+//		InsertionSort is = new InsertionSort();
+//		is.setArrayRandom();
+//		System.out.println(is.getArray());
+//		is.insertionSort();
+//		System.out.println(is.getArray());
+		
+		// BubbleSort
+		BubbleSort bs = new BubbleSort();
+		bs.setArrayRandom();
+		System.out.println(bs.getArray());
+		bs.bubbleSort();
+		System.out.println(bs.getArray());
 	}
 
 }
