@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import algorithm.primenumber.PrimeNumber3;
 import algorithm.sort.BubbleSort;
+import algorithm.sort.HeapSort;
 import algorithm.sort.InsertionSort;
 import algorithm.sort.SelectionSort;
 import algorithm.sort.ShellSort;
@@ -58,12 +59,19 @@ public class Main {
 //		bs.bubbleSort();
 //		System.out.println(bs.getArray());
 		
-		// ShellSort
-		ShellSort ss = new ShellSort();
-		ss.setArrayRandom();
-		System.out.println(ss.getArray());
-		ss.shellSort();
-		System.out.println(ss.getArray());
+//		// ShellSort
+//		ShellSort ss = new ShellSort();
+//		ss.setArrayRandom();
+//		System.out.println(ss.getArray());
+//		ss.shellSort();
+//		System.out.println(ss.getArray());
+		
+		// HeapSort
+		HeapSort hs = new HeapSort();
+		hs.setArrayRandom();
+		System.out.println(hs.getArray());
+		hs.heapSort(1);
+		System.out.println(hs.getArray());
 	}
 
 }
