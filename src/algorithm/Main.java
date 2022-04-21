@@ -6,6 +6,7 @@ import algorithm.primenumber.PrimeNumber3;
 import algorithm.sort.BubbleSort;
 import algorithm.sort.HeapSort;
 import algorithm.sort.InsertionSort;
+import algorithm.sort.MergeSort;
 import algorithm.sort.SelectionSort;
 import algorithm.sort.ShellSort;
 
@@ -67,11 +68,18 @@ public class Main {
 //		System.out.println(ss.getArray());
 		
 		// HeapSort
-		HeapSort hs = new HeapSort();
-		hs.setArrayRandom();
-		System.out.println(hs.getArray());
-		hs.heapSort(1);
-		System.out.println(hs.getArray());
+//		HeapSort hs = new HeapSort();
+//		hs.setArrayRandom();
+//		System.out.println(hs.getArray());
+//		hs.heapSort(1);
+//		System.out.println(hs.getArray());
+		
+		//	MergeSort
+		MergeSort ms = new MergeSort();
+		ms.setArrayRandom();
+		System.out.println(ms.getArray());
+		ms.mergeSortDownTop(0, ms.getArraySize() - 1);
+		System.out.println(ms.getArray());
 	}
 
 }
