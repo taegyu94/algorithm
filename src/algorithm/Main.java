@@ -7,6 +7,7 @@ import algorithm.sort.BubbleSort;
 import algorithm.sort.HeapSort;
 import algorithm.sort.InsertionSort;
 import algorithm.sort.MergeSort;
+import algorithm.sort.QuickSort;
 import algorithm.sort.SelectionSort;
 import algorithm.sort.ShellSort;
 
@@ -75,11 +76,20 @@ public class Main {
 //		System.out.println(hs.getArray());
 		
 		//	MergeSort
-		MergeSort ms = new MergeSort();
-		ms.setArrayRandom();
-		System.out.println(ms.getArray());
-		ms.mergeSortDownTop(0, ms.getArraySize() - 1);
-		System.out.println(ms.getArray());
+//		MergeSort ms = new MergeSort();
+//		ms.setArrayRandom();
+//		System.out.println(ms.getArray());
+//		ms.mergeSortDownTop(0, ms.getArraySize() - 1);
+//		System.out.println(ms.getArray());
+		
+		//QuickSort
+		QuickSort qs = new QuickSort();
+		qs.setArrayRandom();
+		System.out.println(qs.getArray());
+		//qs.l_pivot_sort(0, qs.getArrayLength() - 1);
+		//qs.r_pivot_sort(0, qs.getArrayLength()-1);
+		qs.m_pivot_sort(0, qs.getArrayLength() - 1);
+		System.out.println(qs.getArray());
 	}
 
 }
